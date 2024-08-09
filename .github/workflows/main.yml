@@ -46,7 +46,7 @@ jobs:
         resource-group: ${{ vars.ACR_RESGRP }}
         dns-name-label: ${{ vars.ACR_RESGRP }}${{ github.run_number }}
         image: ${{ secrets.ACR_REG }}.azurecr.io/autogen_studio_azure_img:${{ github.sha }}
-        registry-login-server: ${{ secrets.ACR_REG }}
+        registry-login-server: ${{ secrets.ACR_REG }}.azurecr.io
         registry-username: ${{ secrets.ACR_USERNAME }}
         registry-password: ${{ secrets.ACR_PASSWORD }}
         name: mcd79agstudioaz
